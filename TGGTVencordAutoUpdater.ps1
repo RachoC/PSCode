@@ -36,6 +36,10 @@ $hWnd = [Win32]::GetConsoleWindow()
 # Change the window visibility
 [Win32]::ShowWindowAsync($hWnd, $HideWindConst) | Out-Null
 
+
+Start-Sleep -Seconds 2
+
+
 $TestVar = $false
 $hiddenMode = $false
 $VencordUpdateFound = $false
